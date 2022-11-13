@@ -5,7 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SalesDal\SalesDal.csproj" />
+    <Compile Remove="SalesDal\**" />
+    <Compile Remove="SalesUnitTests\**" />
+    <Content Remove="SalesDal\**" />
+    <Content Remove="SalesUnitTests\**" />
+    <EmbeddedResource Remove="SalesDal\**" />
+    <EmbeddedResource Remove="SalesUnitTests\**" />
+    <None Remove="SalesDal\**" />
+    <None Remove="SalesUnitTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="SalesDal\SalesDal.csproj" />
   </ItemGroup>
 
   <ItemGroup>
